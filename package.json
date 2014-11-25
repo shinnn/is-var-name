@@ -1,0 +1,50 @@
+{
+  "name": "is-var-name",
+  "version": "0.0.0",
+  "description": "Check if a string can be used as a JavaScript variable name",
+  "repository": "shinnn/is-var-name",
+  "scripts": {
+    "pretest": "eslint *.js & jscs *.js",
+    "test": "node test.js | tap-spec",
+    "coverage": "istanbul cover test.js",
+    "coveralls": "${npm_package_scripts_coverage} && istanbul-coveralls"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/shinnn/is-var-name/blob/master/LICENSE"
+    }
+  ],
+  "main": "is-var-name-cjs.js",
+  "files": [
+    "is-var-name-cjs.js",
+    "LICENSE"
+  ],
+  "keywords": [
+    "var",
+    "variable",
+    "check",
+    "character",
+    "javascript",
+    "cmascript",
+    "specification",
+    "validation",
+    "spec",
+    "string",
+    "browser",
+    "client-side"
+  ],
+  "devDependencies": {
+    "eslint": "^0.9.2",
+    "istanbul": "^0.3.2",
+    "istanbul-coveralls": "^1.0.1",
+    "jscs": "^1.7.3",
+    "require-bower-files": "^1.0.0",
+    "tap-spec": "^2.1.0",
+    "tape": "^3.0.3"
+  },
+  "jscsConfig": {
+    "preset": "google",
+    "maximumLineLength": 98
+  }
+}

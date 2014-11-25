@@ -1,0 +1,38 @@
+{
+  "name": "is-var-name",
+  "description": "Check if a string can be used as a JavaScript variable name",
+  "keywords": [
+    "var",
+    "variable",
+    "check",
+    "character",
+    "javascript",
+    "cmascript",
+    "specification",
+    "validation",
+    "spec",
+    "string"
+  ],
+  "main": "is-var-name.js",
+  "homepage": "https://github.com/shinnn/is-var-name",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shinnn/is-var-name.git"
+  },
+  "authors": [
+    {
+      "name": "Shinnosuke Watanabe",
+      "url": "https://github.com/shinnn"
+    }
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "coverage",
+    "node_modules",
+    "test.js",
+    "is-var-name-cjs.js",
+    "package.json",
+    "component.json"
+  ]
+}
