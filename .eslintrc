@@ -2,7 +2,6 @@ env:
   browser: true
   node: true
 rules:
-  no-extra-parens: 2
   no-new-func: 0
   eqeqeq: 2
   block-scoped-var: 2
