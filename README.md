@@ -1,9 +1,9 @@
 # is-var-name
 
-[![NPM version](https://badge.fury.io/js/is-var-name.svg)](https://www.npmjs.org/package/is-var-name)
-[![Bower version](https://badge.fury.io/bo/is-var-name.svg)](https://github.com/shinnn/is-var-name/releases)
+[![NPM version](https://img.shields.io/npm/v/is-var-name.svg?style=flat)](https://www.npmjs.com/package/is-var-name)
+[![Bower version](https://img.shields.io/bower/v/is-var-name.svg?style=flat)](https://github.com/shinnn/is-var-name/releases)
 [![Build Status](https://travis-ci.org/shinnn/is-var-name.svg?branch=master)](https://travis-ci.org/shinnn/is-var-name)
-[![Coverage Status](https://img.shields.io/coveralls/shinnn/is-var-name.svg)](https://coveralls.io/r/shinnn/is-var-name)
+[![Coverage Status](https://img.shields.io/coveralls/shinnn/is-var-name.svg?style=flat)](https://coveralls.io/r/shinnn/is-var-name)
 [![devDependency Status](https://david-dm.org/shinnn/is-var-name/dev-status.svg)](https://david-dm.org/shinnn/is-var-name#info=devDependencies)
 
 Check if a string can be used as a [JavaScript variable name](http://es5.github.io/x7.html#x7.6)
@@ -17,7 +17,7 @@ isVarName('f o o'); //=> false
 
 ### Package managers
 
-#### [npm](https://www.npmjs.org/)
+#### [npm](https://www.npmjs.com/)
 
 ```sh
 npm install is-var-name
@@ -63,20 +63,20 @@ isVarName(); //=> false
 
 Instead of this module, you can use [the regular expression that matches valid variable names](http://stackoverflow.com/questions/1661197/valid-characters-for-javascript-variable-names/9337047#9337047).
 
-### Pros
+### Regular expression pros
 
-This module uses [`Function` constructor](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function) but regular expression doesn't.
+*is-var-name* uses [`Function` constructor](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function) but regular expression doesn't.
 
 According to [the ESLint documentation](http://eslint.org/docs/rules/no-new-func.html), `new Function()` is:
 
 > considered by many to be a bad practice due to the difficult in debugging and reading these types of functions.
 
-### Cons
+### Regular expression cons
 
-Since the regular expression is too long (11,236 characters), it increases the file size of your project.
+Since the regular expression is too long (11,236 characters), it increases the file size of your package/repository/website.
 
 ## License
 
-Copyright (c) 2014 [Shinnosuke Watanabe](https://github.com/shinnn)
+Copyright (c) [Shinnosuke Watanabe](https://github.com/shinnn)
 
 Licensed under [the MIT License](./LICENSE).
