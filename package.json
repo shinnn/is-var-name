@@ -4,7 +4,7 @@
   "description": "Check if a string can be used as a JavaScript variable name",
   "repository": "shinnn/is-var-name",
   "scripts": {
-    "pretest": "eslint *.js & jscs *.js",
+    "pretest": "jscs *.js && eslint *.js",
     "test": "node test.js | tap-spec",
     "coverage": "istanbul cover test.js",
     "coveralls": "${npm_package_scripts_coverage} && istanbul-coveralls"
@@ -17,8 +17,7 @@
   ],
   "main": "is-var-name-cjs.js",
   "files": [
-    "is-var-name-cjs.js",
-    "LICENSE"
+    "is-var-name-cjs.js"
   ],
   "keywords": [
     "var",
@@ -35,13 +34,13 @@
     "client-side"
   ],
   "devDependencies": {
-    "eslint": "^0.9.2",
-    "istanbul": "^0.3.2",
+    "eslint": "^0.12.0",
+    "istanbul": "^0.3.5",
     "istanbul-coveralls": "^1.0.1",
-    "jscs": "^1.7.3",
-    "require-bower-files": "^1.0.0",
-    "tap-spec": "^2.1.0",
-    "tape": "^3.0.3"
+    "jscs": "^1.10.0",
+    "require-bower-files": "^2.0.0",
+    "tap-spec": "^2.2.0",
+    "tape": "^3.4.0"
   },
   "jscsConfig": {
     "preset": "google",

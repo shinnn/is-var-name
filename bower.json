@@ -28,11 +28,9 @@
   "license": "MIT",
   "ignore": [
     "**/.*",
+    "*.js",
+    "*.json",
     "coverage",
-    "node_modules",
-    "test.js",
-    "is-var-name-cjs.js",
-    "package.json",
-    "component.json"
+    "node_modules"
   ]
 }
