@@ -1,9 +1,9 @@
 # is-var-name
 
-[![NPM version](https://img.shields.io/npm/v/is-var-name.svg?style=flat)](https://www.npmjs.com/package/is-var-name)
-[![Bower version](https://img.shields.io/bower/v/is-var-name.svg?style=flat)](https://github.com/shinnn/is-var-name/releases)
+[![NPM version](https://img.shields.io/npm/v/is-var-name.svg)](https://www.npmjs.com/package/is-var-name)
+[![Bower version](https://img.shields.io/bower/v/is-var-name.svg)](https://github.com/shinnn/is-var-name/releases)
 [![Build Status](https://travis-ci.org/shinnn/is-var-name.svg?branch=master)](https://travis-ci.org/shinnn/is-var-name)
-[![Coverage Status](https://img.shields.io/coveralls/shinnn/is-var-name.svg?style=flat)](https://coveralls.io/r/shinnn/is-var-name)
+[![Coverage Status](https://img.shields.io/coveralls/shinnn/is-var-name.svg)](https://coveralls.io/r/shinnn/is-var-name)
 [![devDependency Status](https://david-dm.org/shinnn/is-var-name/dev-status.svg)](https://david-dm.org/shinnn/is-var-name#info=devDependencies)
 
 Check if a string can be used as a [JavaScript variable name](http://es5.github.io/x7.html#x7.6)
@@ -77,6 +77,6 @@ Since the regular expression is too long (11,236 characters), it increases the f
 
 ## License
 
-Copyright (c) [Shinnosuke Watanabe](https://github.com/shinnn)
+Copyright (c) 2014 - 2015 [Shinnosuke Watanabe](https://github.com/shinnn)
 
 Licensed under [the MIT License](./LICENSE).
