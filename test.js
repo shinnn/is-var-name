@@ -1,6 +1,5 @@
 'use strict';
 
-var requireBowerFiles = require('require-bower-files');
 var test = require('tape');
 
 function runTest(description, main) {
@@ -32,8 +31,3 @@ function runTest(description, main) {
 }
 
 runTest('require(\'is-var-name\')', require('./'));
-
-global.window = {};
-requireBowerFiles({self: true});
-
-runTest('window.isVarName', window.isVarName);
