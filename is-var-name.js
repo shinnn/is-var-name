@@ -1,5 +1,5 @@
 /*!
- * is-var-name | MIT (c) Shinnosuke Watanabe
+ * is-var-name | ISC (c) Shinnosuke Watanabe
  * https://github.com/shinnn/is-var-name
 */
 

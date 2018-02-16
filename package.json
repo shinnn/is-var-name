@@ -9,12 +9,7 @@
     "coverage": "istanbul cover test.js",
     "coveralls": "${npm_package_scripts_coverage} && istanbul-coveralls"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/shinnn/is-var-name/blob/master/LICENSE"
-    }
-  ],
+  "license": "ISC",
   "main": "is-var-name-cjs.js",
   "files": [
     "is-var-name-cjs.js"
