@@ -7,8 +7,12 @@ export default function isVarName(str) {
 		return false;
 	}
 
+	if (str.trim() !== str) {
+		return false;
+	}
+
 	try {
-		new Function('var ' + str)();
+		new Function(str, 'var ' + str);
 	} catch (e) {
 		return false;
 	}
