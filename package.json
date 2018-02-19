@@ -1,43 +1,47 @@
 {
-  "name": "is-var-name",
-  "version": "1.0.0",
-  "description": "Check if a string can be used as a JavaScript variable name",
-  "repository": "shinnn/is-var-name",
-  "scripts": {
-    "pretest": "jscs *.js && eslint *.js",
-    "test": "node test.js | tap-spec",
-    "coverage": "istanbul cover test.js",
-    "coveralls": "${npm_package_scripts_coverage} && istanbul-coveralls"
-  },
-  "license": "ISC",
-  "main": "is-var-name-cjs.js",
-  "files": [
-    "is-var-name-cjs.js"
-  ],
-  "keywords": [
-    "var",
-    "variable",
-    "check",
-    "character",
-    "javascript",
-    "cmascript",
-    "specification",
-    "validation",
-    "spec",
-    "string",
-    "browser",
-    "client-side"
-  ],
-  "devDependencies": {
-    "eslint": "^0.12.0",
-    "istanbul": "^0.3.5",
-    "istanbul-coveralls": "^1.0.1",
-    "jscs": "^1.10.0",
-    "tap-spec": "^2.2.0",
-    "tape": "^3.4.0"
-  },
-  "jscsConfig": {
-    "preset": "google",
-    "maximumLineLength": 98
-  }
+	"name": "is-var-name",
+	"version": "1.0.0",
+	"description": "Check if a string can be used as a JavaScript variable name",
+	"repository": "shinnn/is-var-name",
+	"scripts": {
+		"prebuild": "eslint --fix --format=codeframe index.mjs test.js",
+		"build": "rollup --config=node:module",
+		"pretest": "npm run-script build",
+		"test": "nyc --reporter=html --reporter=text node test.js"
+	},
+	"license": "ISC",
+	"files": [
+		"index.js",
+		"index.mjs"
+	],
+	"module": "index.mjs",
+	"keywords": [
+		"var",
+		"variable",
+		"let",
+		"const",
+		"identifier",
+		"check",
+		"character",
+		"javascript",
+		"ecmascript",
+		"specification",
+		"validation",
+		"spec",
+		"string"
+	],
+	"devDependencies": {
+		"@shinnn/eslint-config": "^5.4.0",
+		"eslint": "^4.18.0",
+		"nyc": "^11.5.0",
+		"rollup": "^0.56.2",
+		"rollup-config-module": "^2.0.0",
+		"tape": "^4.9.0"
+	},
+	"eslintConfig": {
+		"extends": "@shinnn",
+		"rules": {
+			"no-new-func": "off"
+		}
+	}
 }

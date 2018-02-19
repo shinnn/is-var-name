@@ -1,33 +1,32 @@
 'use strict';
 
-var test = require('tape');
+const test = require('tape');
+const isVarName = require('.');
 
-function runTest(description, main) {
-  test(description, function(t) {
-    t.plan(5);
+test('isVarName', t => {
+	t.equal(
+		isVarName('a'),
+		true,
+		'should return true when the argument can be a variable name.'
+	);
 
-    t.equal(main.name, 'isVarName', 'should have a function name.');
+	t.equal(
+		isVarName('if'),
+		false,
+		'should return false when the argument cannot be a variable name.'
+	);
 
-    t.strictEqual(
-      main('a'), true,
-      'should return true when the argument can be a variable name.'
-    );
+	t.equal(
+		isVarName(['a']),
+		false,
+		'should return false when the argument is not a string.'
+	);
 
-    t.strictEqual(
-      main('if'), false,
-      'should return false when the argument cannot be a variable name.'
-    );
+	t.equal(
+		isVarName(),
+		false,
+		'should return false when it takes no arguments.'
+	);
 
-    t.strictEqual(
-      main(['a']), false,
-      'should return false when the argument is not a string.'
-    );
-
-    t.strictEqual(
-      main(), false,
-      'should return false when it takes no arguments.'
-    );
-  });
-}
-
-runTest('require(\'is-var-name\')', require('./'));
+	t.end();
+});
