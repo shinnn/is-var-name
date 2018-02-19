@@ -1,6 +1,6 @@
 {
 	"name": "is-var-name",
-	"version": "1.0.0",
+	"version": "2.0.0-0",
 	"description": "Check if a string can be used as a JavaScript variable name",
 	"repository": "shinnn/is-var-name",
 	"scripts": {
