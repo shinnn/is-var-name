@@ -2,14 +2,15 @@
 	"name": "is-var-name",
 	"version": "2.0.0",
 	"description": "Check if a string can be used as a JavaScript variable name",
+	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
 	"repository": "shinnn/is-var-name",
+	"license": "ISC",
 	"scripts": {
-		"prebuild": "eslint --fix --format=codeframe index.mjs test.js",
+		"prebuild": "eslint .",
 		"build": "rollup --config=node:module",
 		"pretest": "npm run-script build",
-		"test": "nyc --reporter=html --reporter=text node test.js"
+		"test": "nyc node test.js"
 	},
-	"license": "ISC",
 	"files": [
 		"index.js",
 		"index.mjs"
@@ -31,17 +32,21 @@
 		"string"
 	],
 	"devDependencies": {
-		"@shinnn/eslint-config": "^5.4.0",
-		"eslint": "^4.18.0",
-		"nyc": "^11.5.0",
-		"rollup": "^0.56.2",
-		"rollup-config-module": "^2.0.0",
-		"tape": "^4.9.0"
+		"@shinnn/eslint-config": "^6.10.0",
+		"eslint": "^5.16.0",
+		"nyc": "^13.3.0",
+		"nyc-config-common": "^1.0.1",
+		"rollup": "^1.9.0",
+		"rollup-config-module": "^2.0.2",
+		"tape": "^4.10.1"
 	},
 	"eslintConfig": {
 		"extends": "@shinnn",
 		"rules": {
 			"no-new-func": "off"
 		}
+	},
+	"nyc": {
+		"extends": "nyc-config-common"
 	}
 }

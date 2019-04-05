@@ -1,7 +1,7 @@
 # is-var-name
 
 [![npm version](https://img.shields.io/npm/v/is-var-name.svg)](https://www.npmjs.com/package/is-var-name)
-[![Build Status](https://travis-ci.org/shinnn/is-var-name.svg?branch=master)](https://travis-ci.org/shinnn/is-var-name)
+[![Build Status](https://travis-ci.com/shinnn/is-var-name.svg?branch=master)](https://travis-ci.com/shinnn/is-var-name)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/is-var-name.svg)](https://coveralls.io/r/shinnn/is-var-name)
 
 Check if a string can be used as a [JavaScript variable name](https://es5.github.io/x7.html#x7.6)
@@ -13,7 +13,7 @@ isVarName('f o o'); //=> false
 
 ## Installation
 
-[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/getting-started/what-is-npm).
+[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/about-npm/).
 
 ```
 npm install is-var-name
@@ -63,4 +63,4 @@ Since the regular expression is too long ([about 16,000 characters](https://gist
 
 ## License
 
-[ISC License](./LICENSE) © 2018 Shinnosuke Watanabe
+[ISC License](./LICENSE) © 2018 - 2019 Shinnosuke Watanabe

@@ -13,7 +13,7 @@ export default function isVarName(str) {
 
 	try {
 		new Function(str, 'var ' + str);
-	} catch (e) {
+	} catch (_) {
 		return false;
 	}
 
